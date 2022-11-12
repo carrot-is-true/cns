@@ -10,17 +10,22 @@ canvas {
 .okras {
   width: max-content;
 }
+	#col {
+	position: relative;
+	left: 300px;
+        top: 50px;
+	
+	}
 </style>
 <script async src="https://imgbb.com/upload.js"></script>	
 	
 	</head>
 <body>
 <h2>Лепилка червей</h2>
-<table><tr><td><canvas id="canvas" width="100px" height="150px"></canvas></td>
+<canvas id="canvas" width="100px" height="150px"></canvas><div id="col">	Цвет<br>
+	<input type="color" onclick="changeColor(get_hex.value)" id="get_hex"></div>
 <td>
 <div class="Toolbar">
-	Цвет<br>
-	<input type="color" onclick="changeColor(get_hex.value)" id="get_hex">
 </div>
 	<div class="Toolbar">
 		Толщина<br>
@@ -28,15 +33,15 @@ canvas {
 		<button onclick="changeThickness(5, this)">Средняя кисть</button>
 		<button onclick="changeThickness(10, this)">Толстая кисть</button>
 	</div>
-</div></td></tr>
-<tr><td>	<select id="sel">
+</div>
+	<select id="sel">
 <option value="value1">Дождевой червь</option>
 <option value="value2" selected>Белая планария</option>
 <option value="value3">Ложноконская пиявка</option>
 <option value="value4">Медицинская пиявка</option>
 <option value="value5">Нематода</option>
 <option value="value6">Трубочник</option>
-</select></td></td></table>
+</select>
 <script>var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var img = new Image();
