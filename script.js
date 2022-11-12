@@ -21,7 +21,7 @@ function onChange() {
   e.onchange = onChange;
   context.clearRect(0, 0, 900, 900)
  if (value == "value2") {
-   var img1 = loadImage('https://i.ibb.co/Bjck7RW/2.png', 'main');
+   var img1 = loadImage('/1/2.png', 'main');
     context.drawImage(img1, 0, 0);
   }
   else  if (value == "value1") {
