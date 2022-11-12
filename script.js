@@ -25,11 +25,11 @@ function onChange() {
     context.drawImage(img1, 0, 0);
   }
   else  if (value == "value1") {
-    var img1 = loadImage('https://i.ibb.co/BwNsBHP/1.png', 'main');
+    var img1 = loadImage('/1/1.png', 'main');
     context.drawImage(img1, 0, 0);
   }
  else if (value == "value3") {
-   var img1 = loadImage('https://i.ibb.co/9qDZXbH/11.png', 'main');
+   var img1 = loadImage('/1/11.png', 'main');
    context.drawImage(img1, 0, 0);
  }
 
