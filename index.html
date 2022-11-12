@@ -16,15 +16,8 @@ canvas {
 	</head>
 <body>
 <h2>Лепилка червей</h2>
-<canvas id="canvas" width="100px" height="150px"></canvas>
-<select id="sel">
-<option value="value1">Дождевой червь</option>
-<option value="value2" selected>Белая планария</option>
-<option value="value3">Ложноконская пиявка</option>
-<option value="value4">Медицинская пиявка</option>
-<option value="value5">Нематода</option>
-<option value="value6">Трубочник</option>
-</select>
+<table><tr><td><canvas id="canvas" width="100px" height="150px"></canvas></td>
+<td>
 <div class="Toolbar">
 	Цвет<br>
 	<input type="color" onclick="changeColor(get_hex.value)" id="get_hex">
@@ -35,7 +28,15 @@ canvas {
 		<button onclick="changeThickness(5, this)">Средняя кисть</button>
 		<button onclick="changeThickness(10, this)">Толстая кисть</button>
 	</div>
-</div>
+</div></td></tr>
+<tr><td>	<select id="sel">
+<option value="value1">Дождевой червь</option>
+<option value="value2" selected>Белая планария</option>
+<option value="value3">Ложноконская пиявка</option>
+<option value="value4">Медицинская пиявка</option>
+<option value="value5">Нематода</option>
+<option value="value6">Трубочник</option>
+</select></td></td></table>
 <script>var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var img = new Image();
@@ -109,19 +110,30 @@ function onChange() {
   e.onchange = onChange;
   context.clearRect(0, 0, 900, 900)
   if (value == "value2") {
-    var img1 = loadImage('https://i.ibb.co/Bjck7RW/2.png', 'main');
+    var img1 = loadImage('1/2.png', 'main');
     context.drawImage(img1, 0, 0);
   }//https://i.ibb.co/vLfBzBY/1.png
   else if (value == "value1") {
-    var img1 = loadImage('https://i.ibb.co/NZkRxNf/image.png', 'main');
+    var img1 = loadImage('1/1.png', 'main');
     context.drawImage(img1, 0, 0);
     img1.width = '150px';
   }
   else if (value == "value3") {
-    var img1 = loadImage('https://i.ibb.co/9qDZXbH/11.png', 'main');
+    var img1 = loadImage('1/11.png', 'main');
     context.drawImage(img1, 0, 0);
   }
-
+  else if (value == "value4") {
+    var img1 = loadImage('1/12.png', 'main');
+    context.drawImage(img1, 0, 0);
+  }
+  else if (value == "value5") {
+    var img1 = loadImage('1/18.png', 'main');
+    context.drawImage(img1, 0, 0);
+  }
+	  else if (value == "value6") {
+    var img1 = loadImage('1/17.png', 'main');
+    context.drawImage(img1, 0, 0);
+  }
   else {
     console.log('ошибочка')
   }
