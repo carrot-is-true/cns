@@ -1,7 +1,8 @@
 body {
-  background-image: back1.png;
+  background-image: url('https://i.ibb.co/5G6VKPj/back1.png');
 }
 canvas {
-  width: 100px;
-  height: auto;
+}
+.okras {
+  width: max-content;
 }
