@@ -1,5 +1,6 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
+canvas.width = '100px';
 var select = document.getElementById('sel')
 var value = select.value;
 function loadImage(src, onload) {
