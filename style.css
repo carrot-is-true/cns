@@ -2,6 +2,6 @@ body {
   background-image: back1.png;
 }
 canvas {
-  width: auto;
+  width: 100px;
   height: auto;
 }
