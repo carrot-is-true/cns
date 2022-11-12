@@ -1,6 +1,6 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
-canvas.width = '100px';
+//canvas.width = '100px';
 var select = document.getElementById('sel')
 var value = select.value;
 function loadImage(src, onload) {
@@ -21,15 +21,15 @@ function onChange() {
   e.onchange = onChange;
   context.clearRect(0, 0, 900, 900)
  if (value == "value2") {
-   var img1 = loadImage('/1/2.png', 'main');
+   var img1 = loadImage('1/2.png', 'main');
     context.drawImage(img1, 0, 0);
   }
   else  if (value == "value1") {
-    var img1 = loadImage('/1/1.png', 'main');
+    var img1 = loadImage('1/1.png', 'main');
     context.drawImage(img1, 0, 0);
   }
  else if (value == "value3") {
-   var img1 = loadImage('/1/11.png', 'main');
+   var img1 = loadImage('1/11.png', 'main');
    context.drawImage(img1, 0, 0);
  }
 
